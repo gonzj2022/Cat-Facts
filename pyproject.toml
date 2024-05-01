@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "cat-facts"
+version = "0.1.0"
+description = ""
+authors = ["gonzj988 <gonzj988@hsd.k12.or.us>"]
+readme = "README.md"
+packages = [{include = "cat_facts"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
