@@ -7,7 +7,9 @@ readme = "README.md"
 packages = [{include = "cat_facts"}]
 
 [tool.poetry.dependencies]
-python = "^3.11"
+python = "^3.9"
+requests = "^2.31.0"
+pyqt6 = "^6.7.0"
 
 
 [build-system]
