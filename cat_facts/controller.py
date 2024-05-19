@@ -4,7 +4,6 @@ by gonzj988
 Python code to make API connections
 """
 import requests as re
-
 url = "https://catfact.ninja/fact"
 
 response = re.get(url)
