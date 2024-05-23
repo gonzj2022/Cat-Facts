@@ -64,9 +64,9 @@ class MainWindow(QMainWindow):
         self.setCentralWidget(widget)
 
     def call_controller(self):
-        user_sel1 = self.Options1.currentIndex()
+        user_sel1 = self.Options1.currentText().lower()
         user_sel2 = self.Options2.currentIndex() + 1
-        controller.catfact(user_sel1, user_sel2)
+        facts = controller.catfact(user_sel1, user_sel2)
 
 app = QApplication(sys.argv)
 w = MainWindow()
