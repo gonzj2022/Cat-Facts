@@ -18,7 +18,31 @@ class MainWindow(QMainWindow):
 
         self.setWindowTitle("WikiCats")
         layout = QVBoxLayout()
-      
+
+        self.setStyleSheet('''
+            QMainWindow{
+                background-color: #1b1b1b;
+            }
+            QLabel{
+                color: #85ea2d;
+            }
+            QComboBox{
+                color: #85ea2d;
+                background-color: #3e3e3e;
+                border: 1px solid #85ea2d;
+            }
+            QComboBox QAbstractItemView{
+            background-color: #3e3e3e;
+            color: #85ea2d;
+            selection-background-color: #62a03f;
+            selection-color: #1b1b1b;               
+            }
+            QPushButton{
+                background-color: #62a03f;
+            }
+        ''')
+
+
         #Question Label settings
         question = QLabel("Would you like to learn about Cats Facts or Breeds?")
         fontquestion = question.font()
